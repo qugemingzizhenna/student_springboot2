@@ -11,4 +11,6 @@ public interface IStuService {
     int deleteStudent(Integer sid);
 
     Student queryById(Integer sid);
+
+    int updateStudent(Student student);
 }

@@ -41,4 +41,9 @@ public class StuServiceImpl implements IStuService {
     public Student queryById(Integer sid) {
         return stuMapper.selectById(sid);
     }
+
+    @Override
+    public int updateStudent(Student student) {
+        return stuMapper.updateById(student);
+    }
 }

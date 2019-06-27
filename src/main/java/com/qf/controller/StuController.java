@@ -55,5 +55,11 @@ public class StuController {
         model.addAttribute("classes",classes);
         return "updateStudent";
     }
+    @RequestMapping("/update")
+    public String update(Student student){
+        stuService.updateStudent(student);
+        System.out.println(student);
+        return "redirect:/stu/list";
+    }
 
 }
